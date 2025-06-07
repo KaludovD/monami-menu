@@ -117,6 +117,7 @@
       color: #b2e58f;
     }
 
+    /* Мобилна версия: 2 колони и по-малки елементи */
     @media (max-width: 600px) {
       body {
         font-size: 16px;
@@ -135,30 +136,29 @@
       }
 
       .items-grid {
-        flex-direction: column;
-        gap: 20px;
-        padding: 0 10px;
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: center;
       }
 
       .item {
-        width: 100%;
-        max-width: none;
-        padding: 15px;
-        border-radius: 12px;
-        box-shadow: 0 0 10px rgba(157, 207, 124, 0.3);
+        width: calc(50% - 12px);
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: 0 0 8px rgba(157, 207, 124, 0.3);
       }
 
       .item img {
-        height: 180px;
-        border-radius: 10px;
+        height: 110px;
+        border-radius: 8px;
       }
 
       .item h3 {
-        font-size: 1.3rem;
+        font-size: 1rem;
       }
 
       .price {
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
 
       footer {
