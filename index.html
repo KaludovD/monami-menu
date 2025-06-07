@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mon Ami - Меню</title>
   <style>
     body {
@@ -19,43 +19,6 @@
       color: #d4edc4;
     }
 
-    header h1 {
-      position: relative;
-      display: inline-block;
-      font-size: 3rem;
-      color: #d4edc4;
-      font-weight: bold;
-    }
-
-    .leaf {
-      font-size: 1.8rem;
-      position: relative;
-      top: 8px;
-      color: #9dcf7c;
-      user-select: none;
-      transition: transform 0.3s ease;
-    }
-
-    .leaf.left {
-      margin-right: 10px;
-      animation: swayLeft 3s ease-in-out infinite;
-    }
-
-    .leaf.right {
-      margin-left: 10px;
-      animation: swayRight 3s ease-in-out infinite;
-    }
-
-    @keyframes swayLeft {
-      0%, 100% { transform: rotate(-10deg); }
-      50% { transform: rotate(10deg); }
-    }
-
-    @keyframes swayRight {
-      0%, 100% { transform: rotate(10deg); }
-      50% { transform: rotate(-10deg); }
-    }
-
     .menu-section {
       padding: 20px;
     }
@@ -67,47 +30,23 @@
       color: #b2e58f;
     }
 
-    .items-grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 15px;
-      justify-content: center;
-    }
-
     .item {
       background-color: #1a1a1a;
       border: 1px solid #3a5735;
       border-radius: 8px;
-      padding: 10px;
-      width: 180px;
-      box-sizing: border-box;
-      text-align: center;
-      transition: transform 0.3s ease;
-    }
-
-    .item:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 10px #9dcf7c;
+      padding: 15px;
+      margin-bottom: 15px;
     }
 
     .item img {
       max-width: 100%;
-      height: 120px;
-      object-fit: cover;
       border-radius: 5px;
-      margin-bottom: 8px;
-    }
-
-    .item h3 {
-      margin: 8px 0 5px 0;
-      font-size: 1.1rem;
-      color: #b2e58f;
+      margin-bottom: 10px;
     }
 
     .price {
       color: #9dcf7c;
       font-weight: bold;
-      margin-bottom: 5px;
     }
 
     footer {
@@ -119,90 +58,52 @@
 
     @media (max-width: 600px) {
       .item {
-        width: 100%;
-        max-width: 300px;
         padding: 10px;
-      }
-      .items-grid {
-        flex-direction: column;
-        gap: 15px;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>
-      <span class="leaf left">🍃</span>
-      Mon Ami
-      <span class="leaf right">🍃</span>
-    </h1>
+    <h1>Mon Ami</h1>
     <p>Онлайн Меню</p>
   </header>
 
   <div class="menu-section">
-    <h2>🥤 Безалкохолни напитки</h2>
-    <div class="items-grid">
-      <div class="item">
-        <img src="https://devin2u.bg/media/catalog/product/cache/c27388d20c7c52543d9bb519b036e8ba/d/e/devin-izvorna-voda-70240000000.jpg" alt="Вода" />
-        <h3>Вода</h3>
-        <p class="price">500мл - 2 лв</p>
-        <p>1.5л - 2.50 лв</p>
-      </div>
-      <div class="item">
-        <img src="https://napitkite.bg/wp-content/uploads/2018/04/p4VNB-020745-B7r.jpg" alt="Кока кола" />
-        <h3>Кока кола</h3>
-        <p class="price">250мл - 2.50лв</p>
-      </div>
-      <div class="item">
-       <img src="https://bghranite.eu/content/images/thumbs/0023217_fanta-limon-250ml20br-stklo-v-stek_550.gif" alt="Кока кола" />
-        <h3>Фанта лимон</h3>
-        <p class="price">250мл - 2.50лв</p>
-      </div>
-      <div class="item">
-        <img src="https://bai-ilia.com/image/cache/data/fanta-portokal-0250l-kasa48-0-800x800.jpg" alt="Кока кола" />
-        <h3>Фанта портокал</h3>
-        <p class="price">250мл - 2.50лв</p>
-      </div>
-      <div class="item">
-      <img src="https://mihailovitrade.com/2081-large_default/sprajt-0250-stklo.jpg" alt="Кока кола" />
-        <h3>Фанта портокал</h3>
-        <h3>Спрайт</h3>
-        <p class="price">250мл - 2.50лв</p>
-      </div>
-      <div class="item">
-        <img src="https://p.gotvetesmen.com/y/a/yagodova-limonada-12066-500x500.jpg" alt="Домашна лимонада" />
-        <h3>Домашна лимонада</h3>
-        <p class="price">5.00 лв</p>
-        <p>Свежа лимонада с ягода.</p>
-      </div>
+    <h2>🥤 Напитки – Студени</h2>
+    <div class="item">
+      <img src="https://cdncloudcart.com/36518/products/images/24/limonada-s-menta-i-dzindzifil-300ml-669a9fdc19f83_600x600.jpeg?1721409518" alt="Лимонада">
+      <h3>Домашна лимонада</h3>
+      <p class="price">5.00 лв</p>
+      <p>Свежа лимонада с мента и лайм.</p>
     </div>
-  </div>
+    <div class="item">
+      <img src="https://p.gotvetesmen.com/y/a/yagodova-limonada-12066-500x500.jpg" alt="Лимонада">
+      <h3>Домашна лимонада</h3>
+      <p class="price">5.00 лв</p>
+      <p>Свежа лимонада с ягода.</p>
+    </div>
 
   <div class="menu-section">
     <h2>☕ Напитки – Топли</h2>
-    <div class="items-grid">
-      <div class="item">
-        <img src="your-image-link-here.jpg" alt="Капучино" />
-        <h3>Капучино</h3>
-        <p class="price">4.00 лв</p>
-        <p>Ароматно еспресо с млечна пяна.</p>
-      </div>
-      <!-- Добави още топли напитки тук -->
+    <div class="item">
+      <img src="your-image-link-here.jpg" alt="Капучино">
+      <h3>Капучино</h3>
+      <p class="price">4.00 лв</p>
+      <p>Ароматно еспресо с млечна пяна.</p>
     </div>
+    <!-- Добави още топли напитки тук -->
   </div>
 
   <div class="menu-section">
     <h2>🍽️ Храна</h2>
-    <div class="items-grid">
-      <div class="item">
-        <img src="your-image-link-here.jpg" alt="Класически сандвич" />
-        <h3>Класически сандвич</h3>
-        <p class="price">6.50 лв</p>
-        <p>С шунка, кашкавал и свежа салата.</p>
-      </div>
-      <!-- Добави още ястия тук -->
+    <div class="item">
+      <img src="your-image-link-here.jpg" alt="Сандвич">
+      <h3>Класически сандвич</h3>
+      <p class="price">6.50 лв</p>
+      <p>С шунка, кашкавал и свежа салата.</p>
     </div>
+    <!-- Добави още ястия тук -->
   </div>
 
   <footer>
